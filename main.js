@@ -3,7 +3,7 @@ function createGame(player1, hour, player2){
         <li>
             <img src="./assets/national-teams/${player1}.png" alt="Bandeira do(a) ${player1}">
             <strong>${hour}</strong>
-            <img src="/assets/national-teams/${player2}.png" alt="Bandeira do(a) ${player1}">
+            <img src="/assets/national-teams/${player2}.png" alt="Bandeira do(a) ${player2}">
         </li>
     `
 }
