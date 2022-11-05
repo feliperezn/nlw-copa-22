@@ -30,7 +30,12 @@ ul {
 }
 
 body {
-    background: #121214 var(--bg-img) no-repeat bottom center/cover;
+    /* background: #121214 var(--bg-img) no-repeat bottom center/100%; */
+    background: #121214;
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
     min-height: 100vh;
 }
 
@@ -57,6 +62,7 @@ header img {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    margin: 0 auto;
 }
 
 .card {
@@ -159,9 +165,11 @@ header,
         transform: translateY(-40px);
         opacity: 0;
     }
+
     20% {
         opacity: 0;
     }
+
     100% {
         opacity: 1
     }
@@ -174,5 +182,13 @@ header,
         max-width: 670px;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1180px) {
+    #cards {
+        max-width: 900vh;
+        flex-direction: row;
     }
 }
